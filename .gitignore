@@ -3,3 +3,19 @@ data/huati_filter_final_posts_no_sge.txt
 data/microblog_data.csv
 draft/model.ipynb
 draft/sentiment.ipynb
+*.ipynb
+.vscode/settings.json
+*.pyc
+data/NLPCC2014 Task2/evsam2.zip
+data/NLPCC2014 Task2/sample.negative.txt
+data/NLPCC2014 Task2/sample.positive.txt
+*.csv
+data/old_data/evsam01.rar
+data/old_data/huati_filter_final_posts_no_sge.txt
+*.bigram
+data/weibo_100k/weibo_senti_100k.zip
+data/weibo_100k/使用说明.txt
+draft/项目_1_的指导.pdf
+draft/similar_words.py
+draft/train.py
+data/old_data/preprocess.py
