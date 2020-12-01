@@ -19,3 +19,5 @@ draft/项目_1_的指导.pdf
 draft/similar_words.py
 draft/train.py
 data/old_data/preprocess.py
+*.pth
+workspace.code-workspace
