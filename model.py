@@ -260,13 +260,14 @@ def sent_classi(sentence, vector, model, device = None, cut = True):
     return pred[0]
 
 
-def get_sentiment(sentence, vector, model_paths = ['./data/set0_f3.pth', './data/set1_f5.pth', './data/set2_f7.pth']):
+def get_sentiment(sentence, vector_path = './data/sgns.sogou.bigram', model_paths = ['./data/set0_f3.pth', './data/set1_f5.pth', './data/set2_f7.pth']):
     '''
     综合多个模型进行情感分析,将sigmoid之后分数取平均再取整
     sentence: 待分析的句子
     model_paths: 模型存储路径列表
     '''
     device = set_device()
+    vector = KeyedVectors.load_word2vec_format(vector_path,binary=False, encoding="utf8",  unicode_errors='ignore')
     score_sum = 0
     for path in model_paths:
         rnn = torch.load(path)
